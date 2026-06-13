@@ -51,7 +51,7 @@ Ki_dq   = Rs / tau_c;   % Gain integral                 [V/(A.s)]
 Iq_max = 2 * Gamma_c / (M0 * Ir_ref); % Courant de la phase q saturée [A]
 
 % Boucle externe vitesse
-tau_w   = 10 * tau_c;   % Constante de temps boucle omega [s]
+tau_w   = 8 * 10 * tau_c;   % Constante de temps boucle omega [s] hyp : boucle interne 10 fois plus rapide, nombre magique 8
 Kp_w    = J / (tau_w * M0 * Ir_ref);  % Gain proportionnel [A.s/rad]
 Ki_w    = Kp_w / tau_w; % Gain integral                 [A/rad]
 
